@@ -1,33 +1,42 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { useNavigate } from "react-router-dom";
 import Grid from "@mui/material/Grid";
+import PaymentDialog from "../paymentDialog/PaymentDialog";
 
 const OrderConfirmation = () => {
   const { cart } = useContext(CartContext);
-  const navigate = useNavigate();
   const totalAmount = cart.reduce(
     (acc, item) => acc + item.price * item.quantity,
     0
   );
 
+  const [open, setOpen] = useState(false);
+
   const proceedPayment = () => {
-    navigate("/");
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
   };
 
   return (
-    <div className="container center">
-      <Typography variant="h3">Order Confirmation</Typography>
-      <span>
-        <Typography variant="h5">Thank you for your order!</Typography>
-      </span>
-      <span style={{ paddingTop: "30px" }}>
-        <Typography>Here is your summary order:</Typography>
-      </span>
+    <div className="container">
+      <div className="order-confirmation-box" style={{paddingTop:"20px", paddingBottom:"20px"}}>
+        <span>
+          <Typography variant="h3">Order Confirmation</Typography>
+        </span>
+        <span>
+          <Typography variant="h5">Thank you for your order!</Typography>
+        </span>
+        <span style={{ paddingTop: "30px" }}>
+          <Typography>Here is your summary order:</Typography>
+        </span>
+      </div>
 
       <div>
         {cart.map((item) => (
@@ -56,6 +65,9 @@ const OrderConfirmation = () => {
           </Button>
         </Grid>
       </Grid>
+      <div>
+        <PaymentDialog open={open} onClose={() => setOpen(false)}/>
+      </div>
     </div>
   );
 };
