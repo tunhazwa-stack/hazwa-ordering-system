@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Hoodie",
+      "description": "Description for Hoodie",
+      "price": 10.0
+    },
+    {
+      "id": 2,
+      "name": "Sweater",
+      "description": "Description for Sweater",
+      "price": 20.0
+    },
+    {
+      "id": 3,
+      "name": "Pants",
+      "description": "Description for Pants",
+      "price": 30.0
+    }
+  ]
+  

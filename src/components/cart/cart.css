@@ -1,0 +1,28 @@
+.cart-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.remove-button{
+  float: right;
+}
+
+.total-amount{
+  padding-top: 20px;
+}
+
+.button-checkout{
+  float: right;
+}
+
+.text-cart{
+  padding-top: 20px;
+}
+
+.center-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
