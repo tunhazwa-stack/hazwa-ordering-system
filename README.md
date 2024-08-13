@@ -32,6 +32,6 @@ You may also see any lint errors in the console.
 
 # Screenshot
 
-<img src="assets/screenshot_1.png">
-<img src="assets/screenshot_2.png">
-<img src="assets/screenshot_3.png">
+<img src="src/assets/screenshot_1.png">
+<img src="src/assets/screenshot_2 .png">
+<img src="src/assets/screenshot_3.png">
