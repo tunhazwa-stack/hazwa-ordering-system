@@ -25,7 +25,7 @@ export default function PaymentDialog(props) {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-        <Button onClick={props.onClose}>Okay</Button>
+        <Button variant="contained" onClick={props.onClose}>Okay</Button>
         </DialogActions>
       </Dialog>
     </React.Fragment>

@@ -13,7 +13,7 @@ root.render(
     <div id="container">
       <BaseLayout />
     </div>
-    <div id="wrapper">
+    <div>
       <App />
     </div>
   </React.StrictMode>

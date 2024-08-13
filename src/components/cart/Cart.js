@@ -28,7 +28,7 @@ const Cart = () => {
   };
 
   return (
-    <div>
+    <div id="wrapper">
       <h1>Your Cart</h1>
 
       {cart.length === 0 ? (

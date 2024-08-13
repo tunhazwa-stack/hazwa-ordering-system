@@ -7,18 +7,20 @@ import Typography from "@mui/material/Typography";
 const BaseLayout = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar style={{ backgroundColor: "whitesmoke" }}>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1 }}
-            style={{ color: "grey" }}
-          >
-            ABC Shop
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <div>
+        <AppBar position="static">
+          <Toolbar style={{ backgroundColor: "whitesmoke" }}>
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{ flexGrow: 1 }}
+              style={{ color: "grey" }}
+            >
+              ABC Shop
+            </Typography>
+          </Toolbar>
+        </AppBar>
+      </div>
     </Box>
   );
 };

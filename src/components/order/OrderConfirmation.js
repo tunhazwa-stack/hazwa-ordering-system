@@ -25,8 +25,8 @@ const OrderConfirmation = () => {
   };
 
   return (
-    <div className="container">
-      <div className="order-confirmation-box" style={{paddingTop:"20px", paddingBottom:"20px"}}>
+    <div id="wrapper">
+      <div style={{paddingTop:"20px", paddingBottom:"20px"}}>
         <span>
           <Typography variant="h3">Order Confirmation</Typography>
         </span>
