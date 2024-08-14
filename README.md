@@ -7,12 +7,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] Hooks
 - [x] Redux
 
+## Overview
+This is a simple ordering system built with ReactJS, allowing users to view products, add them to a cart, and place an order.
 
 ## Features
+- Product list with details
+- Add to cart functionality
+- View and manage cart items
+- Order confirmation with summary
 
-- Home (Product List Page)
-- Cart 
-- Order Confirmation 
+## Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
 
 ## Requirement
 
