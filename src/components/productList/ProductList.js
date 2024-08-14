@@ -10,6 +10,10 @@ const ProductList = () => {
   const { addToCart } = useContext(CartContext);
   const navigate = useNavigate();
 
+  const handleViewCart = () => {
+    navigate('/cart');
+  }
+
   return (
     <>
       <div>
@@ -31,6 +35,11 @@ const ProductList = () => {
               </Button>
             </div>
           ))}
+        </div>
+        <div className="cart-button">
+        <Button variant="contained" onClick={handleViewCart}>
+            View Cart
+          </Button>
         </div>
       </div>
     </>
