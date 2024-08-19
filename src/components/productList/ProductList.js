@@ -12,9 +12,9 @@ const ProductList = () => {
 
   return (
     <>
-      <div>
+      {/* <div>
         <Carousel />
-      </div>
+      </div> */}
       <div id="wrapper">
         <h1>Product List</h1>
         <div className="product-list">
